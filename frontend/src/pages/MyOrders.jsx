@@ -26,7 +26,7 @@ const MyOrders = () => {
             {data.map((order,index)=>{
                 return(
                     // my-orders-order
-                    <div key={index} className='grid grid-cols-[0.5fr_2fr_1fr_1fr_2fr_1fr] items-center gap-8 text-sm py-3 px-5 text-[#454545] border border-[solid] border-orange-500 lg:grid-cols-[1fr_2fr_1fr] lg:gap-y-1 lg:text-sm'>
+                    <div key={index} className='grid grid-cols-[0.5fr_2fr_1fr_1fr_2fr_1fr] items-center gap-8 text-sm py-3 px-5 text-[#454545] border border-[solid] border-orange-500 sm:grid-cols-[1fr_2fr_1fr] lg:gap-y-1 lg:text-sm'>
                         <img src={assets.parcel_icon} alt="" className='w-12'/>
                         <p>{order.items.map((item,index)=>{
                             if(index === order.items.length-1){
