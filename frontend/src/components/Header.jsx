@@ -1,10 +1,11 @@
 import React from 'react';
+import header_image from '../assets/frontend_assets/header_img.png';
 
 const Header = () => {
     return (
         <>
         {/* header */}
-        <div className="h-[34vw] lg:h-[38vw] my-[30px] mx-auto bg-[url('./header_img.png')] bg-no-repeat bg-contain relative">
+        <div style={{ backgroundImage: `url(${header_image})` }} className="h-[34vw] lg:h-[38vw] my-[30px] mx-auto  bg-no-repeat bg-contain relative">
                 {/* header-contents */}
                 <div className='flex absolute flex-col items-start gap-[1.5vw] max-w-[50%] lg:max-w-[45%] md:max-w-[45%] sm:max-w-[65%] bottom-[10%] left-[6vw] animate-fadeIn3'>
                     <h2 className='font-medium text-white text-[max(4.5vw,22px)]'>
